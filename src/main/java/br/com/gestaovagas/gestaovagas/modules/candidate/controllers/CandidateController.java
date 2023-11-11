@@ -1,6 +1,6 @@
-package com.br.gestaovagas.gestaovagas.modules.candidate.controllers;
+package br.com.gestaovagas.gestaovagas.modules.candidate.controllers;
 
-import com.br.gestaovagas.gestaovagas.modules.candidate.entities.CandidateEntity;
+import br.com.gestaovagas.gestaovagas.modules.candidate.entities.CandidateEntity;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

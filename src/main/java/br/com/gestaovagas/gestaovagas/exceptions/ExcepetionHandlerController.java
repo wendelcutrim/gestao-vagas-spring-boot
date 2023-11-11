@@ -1,7 +1,6 @@
-package com.br.gestaovagas.gestaovagas.exceptions;
+package br.com.gestaovagas.gestaovagas.exceptions;
 
 import org.springframework.context.MessageSource;
-import org.springframework.context.MessageSourceResolvable;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 @ControllerAdvice
 public class ExcepetionHandlerController {

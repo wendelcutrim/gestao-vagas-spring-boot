@@ -1,4 +1,4 @@
-package com.br.gestaovagas.gestaovagas;
+package br.com.gestaovagas.gestaovagas;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

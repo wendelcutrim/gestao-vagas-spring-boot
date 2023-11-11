@@ -1,4 +1,4 @@
-package com.br.gestaovagas.gestaovagas.modules.candidate.entities;
+package br.com.gestaovagas.gestaovagas.modules.candidate.entities;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
