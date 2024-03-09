@@ -1,18 +1,27 @@
 package com.br.gestaovagas.gestaovagas.modules.candidate.entities;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.validator.constraints.Length;
 
+import java.time.LocalDateTime;
+import java.util.UUID;
+
 @Data
+@Entity(name = "candidate")
 public class CandidateEntity {
-    private String name;
     private static final int MAX_LENGTH_PASSWORD = 50;
     private static final int MIN_LENGH_PASSWORD = 6;
 
-    @NotBlank
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
+
+    private String name;
+
     @Pattern(regexp = "\\S+", message = "The field [username] dosn't be have space characters")
     private String username;
 
@@ -25,4 +34,7 @@ public class CandidateEntity {
     private String description;
 
     private String curriculum;
+
+    @CreationTimestamp
+    private LocalDateTime createdAt;
 }
