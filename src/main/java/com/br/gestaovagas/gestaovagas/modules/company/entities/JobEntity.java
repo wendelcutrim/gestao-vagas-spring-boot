@@ -1,5 +1,6 @@
 package com.br.gestaovagas.gestaovagas.modules.company.entities;
 
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -39,7 +40,7 @@ public class JobEntity {
     @Length(min = MIN_LENGTH_LEVEL, max = MAX_LENGTH_LEVEL, message = LEVEL_LENGTH_MESSAGE)
     private String level;
 
-    @Column(name = "company_id")
+    @Column(name = "company_id", nullable = false)
     private UUID companyId;
 
     @ManyToOne()
